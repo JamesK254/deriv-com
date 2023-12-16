@@ -5,17 +5,20 @@ export const deriv_com_url = 'deriv.com'
 export const deriv_me_url = 'deriv.me'
 export const deriv_be_url = 'deriv.be'
 export const staging_deriv_be_url = 'staging.deriv.be'
+export const custom_url = 'deriv-com-khaki.vercel.app'
 
 export const deriv_com_app_id = 16929
 export const deriv_me_app_id = 1411
 export const deriv_be_app_id = 30767
 export const deriv_ctrader_app_id = 36218
+export const custom_app_id = 31927;
 
 const domain_url_pair = {
     [deriv_com_url]: deriv_com_url,
     [deriv_me_url]: deriv_me_url,
     [deriv_be_url]: deriv_be_url,
     [staging_deriv_be_url]: deriv_be_url,
+    [custom_url]: custom_url,
 }
 
 export const domains = [
@@ -23,6 +26,7 @@ export const domains = [
     deriv_me_url,
     deriv_be_url,
     staging_deriv_be_url,
+    custom_url,
     'localhost',
     'deriv-com-git-fork',
 ] //deriv-com-git-fork for vercel server, localhost - for developer mode
@@ -35,6 +39,7 @@ const getDomainUrl = (): string =>
 const getDomainAppID = () => {
     if (getDomainUrl() === deriv_me_url) return deriv_me_app_id
     else if (getDomainUrl() === deriv_be_url) return deriv_be_app_id
+    else if (getDomainUrl() === custom_url) return custom_app_id
     else return deriv_com_app_id
 }
 // '-eutestlink-' regex is meant to create test link for eu countries.
