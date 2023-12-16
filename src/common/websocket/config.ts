@@ -22,7 +22,7 @@ export const domain_config = {
             app_id: deriv_com_app_id,
         },
         {
-            hostname: 'deriv-com-khaki.vercel.app',
+            hostname: 'deriv-com-jamesk254.vercel.app',
             app_id: custom_app_id,
         },
         {
