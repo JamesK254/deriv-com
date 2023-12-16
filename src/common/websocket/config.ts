@@ -12,7 +12,6 @@ import {
     deriv_com_app_id,
     deriv_me_app_id,
     deriv_be_app_id,
-    custom_app_id
 } from '../constants'
 
 export const domain_config = {
@@ -20,10 +19,6 @@ export const domain_config = {
         {
             hostname: 'deriv.com',
             app_id: deriv_com_app_id,
-        },
-        {
-            hostname: 'deriv-com-jamesk254.vercel.app',
-            app_id: custom_app_id,
         },
         {
             hostname: 'deriv.me',
